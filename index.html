@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="retropie.css">
+    </head>
+    <body>
+
+      <div class="sidenav">
+        <a href="index.html">Home</a>
+
+
+        <button class="dropdown-btn"> Games
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="games1.html">Exave Light</a>
+          <a href="games2.html">Exave Dark</a>
+          <a href="games3.html">Exave A.X.L</a>
+         
+        </div>
+
+
+        <button class="dropdown-btn"> Hardware
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="hard1.html">Controllers</a>
+          <a href="hard2.html">Headsets</a>
+          <a href="hard3.html">Camera</a>
+
+        </div>
+        <button class="dropdown-btn"> Prices
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="prices1.html">Exave Light</a>
+          <a href="prices2.html">Exave Dark</a>
+          <a href="prices3.html">Exave A.X.L</a>
+        </div>
+        <a href="contactinfo">Contact info</a>
+      </div>
+      <center>
+        <div class="main">
+          <font color="white"><center><h1> VR CAM</h1>
+            <p>  <h3>Mans greatest gaming station</h3>
+            <ol>
+
+              <p> Best in the nation for VR  
+              <p>
+
+              </p>
+
+
+              <script>
+
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                    } else {
+                      dropdownContent.style.display = "block";
+                    }
+                  });
+                }
+              </script>
+              <img src="wp3091475-virtual-reality-wallpapers.jpg" alt="bckgound" class="bg" />
